@@ -10,11 +10,12 @@ import {
   FarcDriveTypes,
 } from "./";
 
+export const ARCHIVE_NAME = "Archiv für ";
+
 export interface FarcDrive {
-  displayname: string;
+  displayname: string;  // source-Name, f. arc wird ARCHIVE_NAME ergaenzt
   sourcepath: string;
-  arc: boolean;
-  // archivepath: string;
+  archivepath: string;
   type: FarcDriveTypes;  // HOME, DATA, INST
 
 }

@@ -16,9 +16,6 @@ export interface FarcUser {
   vorname: string;
   mail: string;
   roles: string[];
-
-  session: FarcSession;
-
 }
 
 export interface FarcUserDocument  extends FarcUser, Document { }

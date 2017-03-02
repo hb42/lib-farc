@@ -43,7 +43,7 @@ export interface FarcTreeNode extends TreeNode {
   collapsedIcon?: any; // TreeNode -> run time
   leaf?: boolean;      // TreeNode w/ lazy loading -> ignore
   type?: string;        // TreeNode -> Template
-  entryid?: number;
+  entryid?: string;
   selected?: FarcSelectType;  // Auswahl
   selectUid?: string;         //   UID
   selectDate?: number;        //   milis

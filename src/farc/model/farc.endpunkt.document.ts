@@ -9,14 +9,15 @@ import {
 
 export interface FarcEndpunkt {
   endpunkt: string;  // Dir-Name
-  above: [string];   // Pfad ueber EP
-  arc: boolean;      // archive j/n
+  above: string;   // Pfad ueber EP (no leading, trailing slash)
+  // arc: boolean;      // archive j/n
   size?: number;
-  roles?: [string];
+  // roles?: [string];
   // tree?: Types.ObjectId;
-  drive?: Types.ObjectId;
-  epid: string;   // id f. EP -> daten: Name der AD-Gruppe, home: dir-Name, inst: Pfad (backslash?)
-  key: number;
+  drive: Types.ObjectId;
+  // epid: string;   // id f. EP -> daten: Name der AD-Gruppe, home: dir-Name, inst: Pfad (backslash?)
+  // key: number;
+  oe?: Types.ObjectId;
 }
 
 export interface FarcEndpunktDocument extends FarcEndpunkt, Document { }

@@ -12,8 +12,8 @@ import {
 } from "./";
 
 export interface FarcEntry {
-  parent: number;
-  key: number;
+  parent: string; // number;
+  key: string; // number;
   label: string;      // file-/dir-name
   timestamp: number;  // milis -> besser zu verarbeiten als Date
   size: number;
@@ -24,6 +24,8 @@ export interface FarcEntry {
   selected?: FarcSelectType;  // Auswahl
   selectUid?: string;         //   UID
   selectDate?: number;        //   milis
+  processDate?: number;       // Verarbeitung millis
+  processResult?: string;     //   "OK" oder Fehlermeldung
 }
 
 export interface FarcEntryDocument extends FarcEntry, Document { }
