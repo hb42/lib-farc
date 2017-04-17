@@ -14,9 +14,9 @@
  *   leaf?: boolean;
  * }
  */
-import {
-  TreeNode,
-} from "primeng/primeng";
+// import {
+//   TreeNode,
+// } from "primeng/primeng";
 
 import {
   FarcEntryTypes,
@@ -28,8 +28,8 @@ import {
   milis: number = date.getTime()
   date: Date = new Date(milis)
  */
-export interface FarcTreeNode extends TreeNode {
-  label?: string;      // TreeNode -> file-/dir-name
+export interface FarcTreeNode /*extends TreeNode*/ {
+  label?: string;      // primeng.TreeNode -> file-/dir-name
   timestamp?: number;   // milis -> wg. JSON.stringify
   size?: number;
   children?: FarcTreeNode[];  // TreeNode
@@ -37,12 +37,12 @@ export interface FarcTreeNode extends TreeNode {
   entrytype?: FarcEntryTypes;
   arc?: boolean;   // archive j/n
   path?: string[];   // Pfad zu diesem Knoten
-  data?: any;          // TreeNode -> ignore
-  icon?: any;          // TreeNode -> run time
-  expandedIcon?: any;  // TreeNode -> run time
-  collapsedIcon?: any; // TreeNode -> run time
-  leaf?: boolean;      // TreeNode w/ lazy loading -> ignore
-  type?: string;        // TreeNode -> Template
+  data?: any;          // primeng.TreeNode -> ignore
+  icon?: any;          // primeng.TreeNode -> run time
+  expandedIcon?: any;  // primeng.TreeNode -> run time
+  collapsedIcon?: any; // primeng.TreeNode -> run time
+  leaf?: boolean;      // primeng.TreeNode w/ lazy loading
+  type?: string;       // primeng.TreeNode -> Template
   entryid?: string;
   selected?: FarcSelectType;  // Auswahl
   selectUid?: string;         //   UID

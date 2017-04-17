@@ -169,7 +169,7 @@ module.exports = function(env) {
 
         {
           test  : /\.(png|jpg|gif)$/,
-          loader: "url-loader?limit=50000&name=[path][name].[ext]"
+          loader : "url-loader?limit=50000&name=[path][name].[ext]"
         },
 
         /*
@@ -186,8 +186,8 @@ module.exports = function(env) {
           test  : /^(?!.*\.min\.css$).*\.css$/,
           // loaders: ["style-loader", "css-loader"]
           loader: ExtractTextPlugin.extract({
-                                              fallbackLoader: "style-loader",
-                                              loader        : "css-loader?sourceMap"
+                                              fallback: "style-loader",
+                                              use     : "css-loader?sourceMap"
                                             })
         },
 

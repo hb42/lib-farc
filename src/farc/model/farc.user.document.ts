@@ -6,10 +6,6 @@ import {
     Document,
 } from "mongoose";
 
-import {
-  FarcSession,
-} from "./";
-
 export interface FarcUser {
   uid: string;
   name: string;
