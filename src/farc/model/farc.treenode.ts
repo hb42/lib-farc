@@ -19,6 +19,7 @@
 // } from "primeng/primeng";
 
 import {
+  FarcDriveTypes,
   FarcEntryTypes,
   FarcSelectType,
 } from "./";
@@ -47,4 +48,6 @@ export interface FarcTreeNode /*extends TreeNode*/ {
   selected?: FarcSelectType;  // Auswahl
   selectUid?: string;         //   UID
   selectDate?: number;        //   milis
+  oe?: string;   // nur EP
+  drive?: FarcDriveTypes; // nur top node (drive)
 }
