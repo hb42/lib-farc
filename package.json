@@ -1,24 +1,36 @@
 {
   "name": "@hb42/lib-farc",
-  "version": "0.0.3-alpha.29",
+  "version": "1.0.0",
+  "copyright": "Copyright (c) 2018 Hartmut Bauer",
   "description": "Common objects for farc + farc-server",
-  "main": "dist/lib-farc.js",
-  "module": "index.ts",
+  "main": "lib/index.js",
+  "typings": "./lib",
   "scripts": {
+    "clean:lib": "./node_modules/.bin/rimraf ./lib",
+    "clean:tmp": "./node_modules/.bin/rimraf tmp",
+    "clean": "npm run clean:lib && npm run clean:tmp",
+    "build": "npm run clean && tsc",
+    "make": "npm run build && npm --no-git-tag-version version prepatch && npm pack",
+    "release": "npm run build && npm --no-git-tag-version version patch && npm pack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hb",
   "license": "MIT",
-  "private": true,
+  "repository": "hb42/lib-farc",
+  "publishConfig": {
+    "registry": "http://e077npm"
+  },
   "peerDependencies": {
-    "mongoose": "^4.7.2"
+    "mongoose": "^5.0.0"
   },
   "devDependencies": {
-    "@angular/language-service": "^4.0.0",
-    "tslint": "^5.0.0",
-    "typescript": "^2.0.0"
+    "@angular/language-service": "^7.1.4",
+    "@types/mongoose": "^5.3.5",
+    "copyfiles": "^2.1.0",
+    "mongoose": "^5.4.1",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
   },
-  "dependencies": {
-    "mongoose": "^4.10.4"
-  }
+  "dependencies": {}
 }
