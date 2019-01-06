@@ -1,6 +1,6 @@
 {
   "name": "@hb42/lib-farc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "copyright": "Copyright (c) 2018 Hartmut Bauer",
   "description": "Common objects for farc + farc-server",
   "main": "lib/index.js",
@@ -25,10 +25,10 @@
   },
   "devDependencies": {
     "@angular/language-service": "^7.1.4",
-    "@types/mongoose": "^5.3.5",
+    "@types/mongoose": "^5.3.7",
     "copyfiles": "^2.1.0",
-    "mongoose": "^5.4.1",
-    "rimraf": "^2.6.2",
+    "mongoose": "^5.4.2",
+    "rimraf": "^2.6.3",
     "tslint": "^5.12.0",
     "typescript": "^3.2.2"
   },

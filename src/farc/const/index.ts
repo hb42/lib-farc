@@ -18,6 +18,7 @@ export const confMAILFROM: string  = "farc-server.mail.from";
 export const confADMINMAIL: string = "farc-server.adminMail";
 
 // -- SSE --
+export const sseNAME: string    = "farc";
 export const sseNEWVORM: string = "newvormerk";
 export const sseNEWTREE: string = "newtree";
 
@@ -67,10 +68,13 @@ export const apiCONFIG: string = "/config";
  *   POST:   Laufwerk aendern/anlegen
  *           body: FarcDriveDocument
  *           returns FarcDriveDocument
- *   DELETE: Laufwerk loeschen
- *           body: FarcDriveDocument
  */
 export const apiDRIVES: string = "/drives";
+/**
+ * /drive/:entryid
+ *   DELETE: Laufwerk 'entryid' loeschen
+ */
+export const apiDRIVE: string = "/drive";
 
 /**
  * /oes
@@ -79,10 +83,14 @@ export const apiDRIVES: string = "/drives";
  *   POST:   OE aendern/anlegen
  *           body: FarcOeDocument
  *           returns FarcOeDocument
- *   DELETE: OE loeschen
- *           body: FarcOeDocument
  */
 export const apiOES: string = "/oes";
+/**
+ * /oe/:entryid
+ *   DELETE: OE 'entyid' loeschen
+ */
+export const apiOE: string = "/oe";
+
 /**
  * /eps
  *   GET:    Endpunkte holen
@@ -109,11 +117,14 @@ export const apiVORMERKUNG: string = "/vormerkung";
  */
 export const apiEXECVORM: string = "/execvorm";
 /**
- * /result
+ * /results
  *   GET:    Vormerkungsergebnisse holen
  *           returns FarcResultDocument[]
- *   DELETE: Ergebnis loeschen
- *           body: FarcResultDocument
+ */
+export const apiRESULTS: string = "/results";
+/**
+ * /result/:entryid
+ *   DELETE: Ergebnis 'entryid' loeschen
  */
 export const apiRESULT: string = "/result";
 
