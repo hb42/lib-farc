@@ -1,6 +1,6 @@
 {
   "name": "@hb42/lib-farc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "copyright": "Copyright (c) 2018 Hartmut Bauer",
   "description": "Common objects for farc + farc-server",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
     "clean:tmp": "./node_modules/.bin/rimraf tmp",
     "clean": "npm run clean:lib && npm run clean:tmp",
     "build": "npm run clean && tsc",
-    "make": "npm run build && npm --no-git-tag-version version prepatch && npm pack",
+    "make": "npm run build && npm --no-git-tag-version version prerelease && npm pack",
     "release": "npm run build && npm --no-git-tag-version version patch && npm pack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
