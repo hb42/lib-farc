@@ -24,6 +24,11 @@ export const sseNEWTREE: string = "newtree";
 
 // -- REST-API --
 /**
+ * Pfad fuer die API
+ */
+export const apiROOT: string = "/farc";
+
+/**
  * /tree
  *   GET:    Baum bis zu den EPs holen
  *           returns FarcTreeNode[]
