@@ -20,6 +20,7 @@ export interface FarcResult {
   processDate: number;    // Verarbeitung millis
   success: boolean;
   log: string;  // log, error des scripts
+  size: number;  // Datei-/Verzeichnis-Groesse
 }
 
 export interface FarcResultDocument  extends FarcResult, Document { }
