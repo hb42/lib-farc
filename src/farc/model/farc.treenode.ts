@@ -1,8 +1,8 @@
-/*
+/**
  * farc Baumknoten
  *
  * Damit das mit primeNG Tree verwendbar ist muss es das primeNG-interface imitieren:
- * (kein extends, Serverseitig wird die Lib nicht gebraucht)
+ * (kein extends, sonst wuerde serverseitig primeNG gebraucht)
  *
  * export interface TreeNode {
  *   label?: string;
@@ -14,10 +14,6 @@
  *   leaf?: boolean;
  * }
  */
-// import {
-//   TreeNode,
-// } from "primeng/primeng";
-
 import {
   FarcDriveTypes,
   FarcEntryTypes,

@@ -1,7 +1,3 @@
-/**
- * Created by hb on 04.09.16.
- */
-
 import {
   Document,
   Types,

@@ -1,7 +1,3 @@
-/**
- * Created by hb on 06.02.17.
- */
-
 import {
   Document,
 } from "mongoose";

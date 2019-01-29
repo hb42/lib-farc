@@ -41,10 +41,8 @@ export const setConfigValue = (val: any): any => {
     case "number" :
     case "boolean":
       return {_val_: val};
-      break;
     case "object" :  // auch null!
       return val;
-      break;
     default:
       return undefined;
   }
