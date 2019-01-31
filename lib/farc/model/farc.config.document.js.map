@@ -1,0 +1,1 @@
+{"version":3,"file":"farc.config.document.js","sourceRoot":"","sources":["../../../src/farc/model/farc.config.document.ts"],"names":[],"mappings":"","sourcesContent":["import {\n  Document,\n} from \"mongoose\";\n\nexport interface FarcConfig {\n  name: string;\n  value: any;\n\n}\n\nexport interface FarcConfigDocument  extends FarcConfig, Document { }\n"]}

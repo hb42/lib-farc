@@ -1,0 +1,1 @@
+{"version":3,"file":"farc.drive.types.js","sourceRoot":"","sources":["../../../src/farc/model/farc.drive.types.ts"],"names":[],"mappings":";;AAAA,IAAY,cAIX;AAJD,WAAY,cAAc;IACxB,qDAAK,CAAA;IACL,mDAAI,CAAA;IACJ,mDAAI,CAAA;AACN,CAAC,EAJW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAIzB","sourcesContent":["export enum FarcDriveTypes {\n  daten,\n  inst,\n  home,\n}\n"]}
