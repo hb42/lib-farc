@@ -1,6 +1,6 @@
 {
   "name": "@hb42/lib-farc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "copyright": "Copyright (c) 2018-2019 Hartmut Bauer",
   "description": "Common objects for farc + farc-server",
   "main": "lib/index.js",
