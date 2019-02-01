@@ -11,24 +11,29 @@
     "clean": "npm run clean:lib && npm run clean:tmp",
     "build": "npm run clean && tsc",
     "commit": "git add -A ./lib && git commit -m \"package\" ./lib",
-    "push": "git push && git push --tags",
     "make": "npm run build && npm run commit && npm version prerelease --preid=beta",
-    "release": "npm run build && npm run commit && npm version patch"
+    "release:patch": "npm run build && npm run commit && npm version patch",
+    "release:minor": "npm run build && npm run commit && npm version minor",
+    "release:major": "npm run build && npm run commit && npm version major",
+    "release": "npm run release:patch"
   },
   "author": "hb",
   "license": "MIT",
   "repository": "hb42/lib-farc",
+  "config": {
+    "platform": "win"
+  },
   "peerDependencies": {
     "mongoose": "^5.0.0"
   },
   "devDependencies": {
     "@angular/language-service": "^7.2.3",
-    "@types/mongoose": "^5.3.11",
+    "@types/mongoose": "^5.3.12",
     "copyfiles": "^2.1.0",
     "mongoose": "^5.4.8",
     "rimraf": "^2.6.3",
     "tslint": "^5.12.1",
-    "typescript": "^3.2.4"
+    "typescript": "^3.3.1"
   },
   "dependencies": {}
 }
